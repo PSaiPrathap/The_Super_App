@@ -1,0 +1,274 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-container {
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Left */
+
+.left-section {
+  min-width: 50%;
+  background: url("https://images.pexels.com/photos/12262184/pexels-photo-12262184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+}
+
+.overlay h1 {
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Right */
+
+.right-section {
+  min-width: 50%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  padding: 60px 90px;
+  align-items: center;
+}
+
+.logo {
+  color: #72DB73;
+  font-family: "Single Day", cursive;
+  font-size: 60px;
+  text-align: center;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.right-section form {
+  display: flex;
+  min-height: 65%;
+  flex-direction: column;
+}
+
+.right-section input[type="text"],
+.right-section input[type="email"] {
+
+  background: #292929;
+  border: none;
+  padding: 16px;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.right-section input::placeholder {
+  color: #7c7c7c;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #7c7c7c;
+  /* margin: 15px 0 30px; */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #72DB73;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
+}
+
+.terms,
+.privacy {
+
+  color: #7c7c7c;
+  font-size: 14px;
+
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.terms span,
+.privacy span {
+  color: #72DB73;
+}
+
+.error {
+  color: #ff5c5c;
+  font-size: 13px;
+}
+
+
+/* =========================
+   Tablet Responsive
+========================= */
+@media screen and (max-width: 1024px) {
+  .right-section {
+    padding: 40px;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+
+  .overlay h1 {
+    font-size: 42px;
+  }
+
+  button {
+    width: 50%;
+  }
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+@media screen and (max-width: 768px) {
+  .register-container {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .left-section {
+    min-width: 100%;
+    min-height: 35vh;
+  }
+
+  .overlay {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .right-section {
+    min-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .logo {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .right-section form {
+    width: 100%;
+  }
+
+  .right-section input[type="text"],
+  .right-section input[type="email"] {
+    width: 100%;
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .checkbox {
+    font-size: 14px;
+    align-items: flex-start;
+  }
+
+  .button-container {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .terms,
+  .privacy {
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
+/* =========================
+   Small Mobile Devices
+========================= */
+@media screen and (max-width: 480px) {
+  .left-section {
+    min-height: 30vh;
+  }
+
+  .overlay h1 {
+    font-size: 24px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .right-section {
+    padding: 20px 15px;
+  }
+
+  .right-section input[type="text"],
+  .right-section input[type="email"] {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .checkbox {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .terms,
+  .privacy {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .error {
+    font-size: 12px;
+  }
+}
