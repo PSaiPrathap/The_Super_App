@@ -33,10 +33,10 @@ const Dashboard = () => {
               />
 
               <div>
-                <p>KK Vinay</p>
-                <p>Vinay090@gmail.com</p>
+                <p>SAI PRATHAP P</p>
+                <p>sai01@gmail.com</p>
 
-                <h1>vinay060</h1>
+                <h1>Saiprathap01</h1>
 
                 <div className="chips">
                   <span>Horror</span>
