@@ -8,6 +8,9 @@ Built with:
 - Zustand (state management)
 - Axios (dependency included)
 
+Link for live project:
+- https://the-super-app-sai-prathap.vercel.app/
+
 ---
 
 ## Features
